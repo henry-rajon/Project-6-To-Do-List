@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Project</title>
+    <!-- tailwindcss Link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h2 class="text-4xl py-4 mt-5 bg-violet-500 text-center text-white ">To Do Project Students Add</h2>
+
+    <div class="grid grid-cols-2 gap-4 mt-5 w-3/4 mx-auto">
+        <div class="bg-violet-400 p-5 rounded">
+            <p class="text-white text-xl mb-2">Student Name: <input type="text" id="student-name" class="rounded text-black border-indigo-400 text-sm p-2" placeholder="Type Student Name" /></p>
+
+            <p class="text-white text-xl mb-2">Student Id: <input type="text" id="student-id" class="rounded text-black border-indigo-400 text-sm p-2" placeholder="Type Student Name" /></p>
+
+            <p class="text-white text-xl mb-2">Student Dept: <input type="text" id="student-dept" class="rounded text-black border-indigo-400 text-sm p-2" placeholder="Type Student Name" /></p>
+
+            <p class="text-white text-xl mb-2">Student GPA: <input type="text" id="student-gpa" class="rounded text-black border-indigo-400 text-sm p-2" placeholder="Type Student Name" /></p>
+
+            <button id="add-btn" class="text-white bg-pink-400 px-4 py-2 rounded">Add Student</button>
+
+        </div>
+        <!-- ... -->
+        <div>
+            <h2 class="text-center bg-violet-400 text-white text-3xl py-2 rounded mb-2">Students Added List</h2>
+
+            <div class="overflow-x-auto">
+                <table class="table table-zebra w-full">
+                    <!-- head -->
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Id</th>
+                            <th>Dept</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="to-do.js"></script>
+</body>
+</html>
